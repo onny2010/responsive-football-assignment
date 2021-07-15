@@ -1,0 +1,193 @@
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+                                                            fonts styles
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+                                                            common styles
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+p{  
+    font-size:16px;
+    line-height:26px;
+    color: #6C6C6C;
+}
+.container{
+    padding: 0px 30px;
+    max-width: 992px;
+    width: 100%;
+    margin: 0 auto;
+}
+.paddings{
+    padding: 80px 0px;
+}
+.half-width{
+    width: 45%;
+    margin-left: 5%;
+}
+.button{
+    text-decoration: none;
+    padding: 10px 24px;
+    font-weight: 400;
+    font-size:16px;
+    color: #fff;
+    background-color: #E02C6D;
+    border: 2px solid transparent;
+    border-radius:5px
+}
+.button:hover{
+    background-color: blue;
+    border: 1px solid #E02C6D;
+    transition: 1s;
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+                                                            banner styles
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+.banner-section{
+    background-color: #2D25A0;
+}
+.banner{
+    display: flex;
+}
+h1{
+    font-size: 50px;
+    line-height:70px;
+    color: #fff;
+}
+.banner img{
+    width: 100%;
+}
+.banner img:hover{
+    transform: translate(80px);
+    transition: 1s;
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+                                                         players styles
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 45px;
+}
+.player{
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+}
+.player img{
+    width: 100%;
+}
+h3{
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+                                                         highlights section styles
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+.highlights-section{
+    width: 992px;
+    padding-left: 156px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.highlights{
+    display: flex;
+}
+h2{
+    font-size: 48px;
+    line-height: 60px;
+    color: #0A0826;
+    margin-top: 0;
+}
+.highlights p{
+    margin-top: -10px;
+    margin-bottom:40px
+}
+.highlights img{
+    width: 100%;
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+                                                        footer section styles
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.footer-section{
+    text-align: center;
+ }
+ .footer-section img{
+    width: 30%
+ }
+ .footer-section ul{
+     display: flex;
+     justify-content: center;
+ }
+ .footer-section ul li{
+     list-style: none;
+ }
+ .footer-section i{
+     height: 35px;
+     width: 35px;
+     background-color: #E7E7E8;
+     border-radius: 10px;
+     color: #969BAB;
+     margin-right: 10px;
+     text-align: center;
+     cursor: pointer;
+ }
+ .footer-icon{
+     margin-top: 3px;
+ }
+
+
+
+
+
+ 
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+                                                        Respnsive styles
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+@media only screen and (max-width:688px) {
+    .container, .highlights {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .half-width {
+        width: 100%;
+        margin-top: 40px;
+        margin-left:0;
+        align-items: center;
+    }
+    .players-section{
+        width:100%
+    }
+    .players, .highlights{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+    .highlights-section{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .highlights img{
+        width: 400px;
+        height: 348px;
+    }
+    .footer-section{
+        width: 100%;
+        padding: 0;
+    }
+    .footer .foot-img{
+        width: 80%;
+    }
+    .footer p{
+        margin-bottom: 60px;
+    }
+}

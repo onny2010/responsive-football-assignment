@@ -1,0 +1,45 @@
+/* ---------------------------- media queries --------------------------------- */
+
+/* ------------------------
+        mobile device
+--------------------------- */
+/* ---------------- media queries ------------- */
+@media only screen and (max-width:688px) {
+    .container, .highlights {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .half-width {
+        width: 100%;
+        margin-top: 40px;
+        margin-left:0;
+        align-items: center;
+    }
+    .players-section{
+        width:100%
+    }
+    .players, .highlights{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+    .highlights-section{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .highlights img{
+        width: 400px;
+        height: 348px;
+    }
+    .footer-section{
+        width: 100%;
+        padding: 0;
+    }
+    .footer .foot-img{
+        width: 80%;
+    }
+    .footer p{
+        margin-bottom: 60px;
+    }
+}
